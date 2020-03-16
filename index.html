@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="style.css">
 
         <title>
-            Book
+            My Library
         </title>
 
 
@@ -13,14 +13,14 @@
         <button id="showNew">Add New Book</button>
         <button id="cancelButton" class="invisible">Cancel</button>
         <div id="newBook" class="invisible">
-            <form>
+            <form name="bookForm" onsubmit="createNewObject()">
                 <label for="title">Title</label>
                 <input type="text" id="title" name="title">
                 <label for="author">Author</label>
                 <input type="text" id="author" name="author">
                 <label for="pages">Pages</label>
                 <input type="text" id="pages" name="pages">
-                <div id="readUnread">Unread</div>
+                <div id="isRead" class="unread">Unread</div>
                 <button type="submit">Submit</button>
             </form>
         </div>
