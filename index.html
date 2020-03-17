@@ -12,18 +12,43 @@
     <body>
         <button id="showNew">Add New Book</button>
         <button id="cancelButton" class="invisible">Cancel</button>
-        <div id="newBook" class="invisible">
-            <form name="bookForm" onsubmit="createNewObject()">
-                <label for="title">Title</label>
-                <input type="text" id="title" name="title">
-                <label for="author">Author</label>
-                <input type="text" id="author" name="author">
-                <label for="pages">Pages</label>
-                <input type="text" id="pages" name="pages">
-                <div id="isRead" class="unread">Unread</div>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
+        
+            <div id="newBook" class="invisible">
+                <form  id="bookForm" name="bookForm" onsubmit="createNewObject()">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title">
+                    <label for="author">Author</label>
+                    <input type="text" id="author" name="author">
+                    <label for="pages">Pages</label>
+                    <input type="text" id="pages" name="pages">
+                    <div id="isRead" class="unread">Unread</div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <div id="cardsContainer">
+                <div class="card">
+                    <img src="img/azkaban.jpg" alt="Avatar">
+                    <div class="container">
+                        <h4>Harry Potter andthe Azkaban Prisioner</h4>
+                        <p>J.K.Rowling</p>
+                        <p>256 pages</p>
+                        <p>read</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/goblet.jpg" alt="Avatar">
+                    <div class="container">
+                        <h4>Harry Potter and the Goblet of Fire</h4>
+                        <p>J.K.Rowling</p>
+                        <p>452 pages</p>
+                        <p>Unread</p>
+                    </div>
+                </div>
+            </div>
+
+
         <script type="text/javascript" src="app.js"></script>
     </body>
 </html>
