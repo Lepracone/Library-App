@@ -3,8 +3,117 @@
     background-color: aqua;
 }
 
+#cardsContainer{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: 'Baloo 2', cursive;
+
+}
+
 .cardStyle{
+ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+ border: 1px solid rgb(150, 145, 145);
+ width: 350px;
+ margin: 20px 20px;
+ background-color: rgb(248, 239, 223);
+ 
+}
+
+.cardStyle img{
     width: 200px;
-    height: 200px;
-    background: green;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid white;
+}
+
+.imageContainer{
+    text-align: center;
+    margin: 20px 20px;
+    background-image: url("img/book_back.jpeg");
+}
+
+.textContainer{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+
+}
+
+p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+h3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height:60px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.deleteButton{
+    background: rgb(212, 58, 58);
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    margin: 0;
+    border-color: rgb(212, 58, 58);
+    margin-right: 5px;
+    margin-bottom: 5px;
+    float:right;
+}
+
+.trashButton{
+    color: white;
+}
+
+.greenButton{
+    background: rgb(39, 177, 46);
+    border-radius: 5px;
+    border-color: rgb(39, 177, 46);
+    color:white;
+    font-size: 25px;
+    font-family: 'Baloo 2', cursive;
+}
+
+.redButton{
+    background: rgb(212, 58, 58);
+    border-radius: 5px;
+    border-color: rgb(212, 58, 58);
+    color:white;
+    font-size: 25px;
+    font-family: 'Baloo 2', cursive;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    font-family: 'Baloo 2', cursive;
+    font-size: 20px;
+}
+
+form input{
+    width: 400px;
+    height: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+form button{
+    margin-left: 10px;
+}
+
+.unread{
+    width: 100px;
+    text-align: center;
+    background: rgb(223, 223, 83);
+    border-radius: 5px;
 }
